@@ -11,7 +11,12 @@ public class Main {
             calificacion2 = JOptionPane.showInputDialog("Ingrese la segunda calificacion");
             calificacion3 = JOptionPane.showInputDialog("Ingrese la tercera calificacion");
 
+            calificacion1 = Integer.parseInt(calificacion1);
+            calificacion2 = Integer.parseInt(calificacion2);
+            calificacion3 = Integer.parseInt(calificacion3);
 
+            promedio = (calificacion1 + calificacion2 + calificacion3)/3;
 
+            JOptionPane.showMessageDialog(null, "El promedio es: " + promedio);
     }
 }
