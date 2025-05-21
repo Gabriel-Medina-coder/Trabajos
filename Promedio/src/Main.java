@@ -2,20 +2,20 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        String  calificacion1;
-        String calificacion2;
-        String  calificacion3;
+
+        float suma;
         float promedio;
 
-            calificacion1 = JOptionPane.showInputDialog("Ingrese la calificación");
-            calificacion2 = JOptionPane.showInputDialog("Ingrese la segunda calificacion");
-            calificacion3 = JOptionPane.showInputDialog("Ingrese la tercera calificacion");
+            java.lang.String calificacion1 = JOptionPane.showInputDialog("Ingrese la calificación");
+            java.lang.String calificacion2 = JOptionPane.showInputDialog("Ingrese la segunda calificacion");
+            java.lang.String calificacion3 = JOptionPane.showInputDialog("Ingrese la tercera calificacion");
 
-            calificacion1 = Integer.parseInt(calificacion1);
-            calificacion2 = Integer.parseInt(calificacion2);
-            calificacion3 = Integer.parseInt(calificacion3);
+            float cal1= Float.parseFloat(calificacion1);
+            float cal2 = Float.parseFloat(calificacion2);
+            float cal3 = Float.parseFloat(calificacion3);
 
-            promedio = (calificacion1 + calificacion2 + calificacion3)/3;
+            suma = cal1 + cal2 + cal3;
+            promedio = suma/3;
 
             JOptionPane.showMessageDialog(null, "El promedio es: " + promedio);
     }
