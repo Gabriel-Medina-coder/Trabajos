@@ -8,7 +8,8 @@ public class Main {
         float promedio;
 
             calificacion1 = JOptionPane.showInputDialog("Ingrese la calificación");
-            calificacion2
+            calificacion2 = JOptionPane.showInputDialog("Ingrese la segunda calificacion");
+            calificacion3 = JOptionPane.showInputDialog("Ingrese la tercera calificacion");
 
 
 
